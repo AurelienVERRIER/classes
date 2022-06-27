@@ -81,23 +81,56 @@ class TV {
     }
   }
 
+  reset = () => {
+    this.channel = 1
+    this.volume = 50
+  }
+
   describe = () =>{
-    console.log(`Your ${this.brand} is on channel ${this.channel} and the volume level is ${this.volume}`)
+    console.log(`Your ${this.brand} TV is on channel ${this.channel} and the volume level is ${this.volume}`)
   }
 
 }
 
 panasonic = new TV ("Panasonic", this.channel , this.volume)
-console.log(panasonic)
+// console.log(panasonic)
 
 panasonic.volumeUp(52)
-console.log(panasonic)
+// console.log(panasonic)
 
 panasonic.volumeDown(30)
-console.log(panasonic)
+// console.log(panasonic)
 
-panasonic.channelUp(33)
-console.log(panasonic)
 
 panasonic.channelDown(53)
-console.log(panasonic)
+// console.log(panasonic)
+
+panasonic.reset()
+// console.log(panasonic)
+
+panasonic.channelUp(33)
+// console.log(panasonic)
+
+panasonic.volumeUp(22)
+// console.log(panasonic)
+
+
+panasonic.describe()
+// console.log(panasonic)
+
+sony = new TV ("Sony", this.channel, this.volume)
+
+sony.volumeDown(23)
+sony.channelUp(13)
+sony.describe()
+
+
+//03 - Video games
+
+// class Characters {
+//   constructor (name, attack, defense, series) {
+//     this.name = null
+//     this.attack = 0
+//     this.defense = 0
+//     this.series = null  }
+// }
